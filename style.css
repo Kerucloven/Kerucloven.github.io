@@ -1,0 +1,63 @@
+:root {
+    --bg: #251918;        /* near-black brown */
+    --bg2: #1b1416;       /* slightly plum-tinted dark */
+    --text: #D5AD99;      /* warm cream */
+    --accent: #A298D9;    /* lavender accent */
+    --glow: rgba(165, 153, 221, 0.85);
+}
+
+body {
+    color: var(--text);
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    background: linear-gradient(180deg, var(--bg2), var(--bg)) no-repeat;
+}
+
+h1 {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 3em;
+}
+
+
+.text-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.text-grid h1 {
+    margin-bottom: 16px;
+}
+
+.contact-grid {
+    display: grid;
+    max-width: 512px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(64px, 1fr));
+    gap: 16px;
+}
+
+.contact-grid a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-grid img {
+    width: 150px;
+    height: 150px;
+}
+
+.contact-grid img {
+    transition: filter 0.2s ease;
+}
+
+.contact-grid a:hover img {
+    filter: drop-shadow(0 0 12px var(--glow));
+}
