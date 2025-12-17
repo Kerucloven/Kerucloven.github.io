@@ -45,6 +45,10 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(64px, 1fr));
     gap: 64px;
     flex: 1;
+    align-content: start;
+    justify-content: center;
+    justify-items: center;
+    align-items: start;
 }
 
 .contact-grid a {
